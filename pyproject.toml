@@ -3,5 +3,19 @@ name = "open-ai-agents-sdk"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "ahmedashfaq850", email = "ahmedashfaq6777@gmail.com" }
+]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "chainlit>=2.5.5",
+    "openai-agents>=0.0.13",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+open-ai-agents-sdk = "open_ai_agents_sdk:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
